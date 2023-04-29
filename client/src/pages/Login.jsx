@@ -1,5 +1,5 @@
 import Google from "../img/google.png";
-import Facebook from "../img/facebook.png";
+// import Facebook from "../img/facebook.png";
 import Github from "../img/github.png";
 
 const Login = () => {
@@ -11,9 +11,9 @@ const Login = () => {
     window.open("http://localhost:5000/auth/github", "_self");
   };
 
-  const facebook = () => {
-    window.open("http://localhost:5000/auth/facebook", "_self");
-  };
+  // const facebook = () => {
+  //   window.open("http://localhost:5000/auth/facebook", "_self");
+  // };
 
   return (
     <div className="login">
@@ -24,10 +24,10 @@ const Login = () => {
             <img src={Google} alt="" className="icon" />
             Google
           </div>
-          <div className="loginButton facebook" onClick={facebook}>
+          {/* <div className="loginButton facebook" onClick={facebook}>
             <img src={Facebook} alt="" className="icon" />
             Facebook
-          </div>
+          </div> */}
           <div className="loginButton github" onClick={github}>
             <img src={Github} alt="" className="icon" />
             Github
